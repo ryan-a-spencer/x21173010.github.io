@@ -1,0 +1,366 @@
+/*
+ *  Student Name:	Ryan Spencer
+ * 	Student ID:		x21173010
+ * 	Course:			HDAIML_JAN22OL
+*/
+
+body {
+  font-family: 'Gill Sans';
+  padding: 12px;
+  background: #e6ded5;
+  line-height: 1.4;
+}
+
+/* Header title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: #8B008B;
+  font-family: 'Century Gothic';
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: Optima;
+}
+
+h2 {
+  color: #8B008B;
+  font-family: Optima;
+}
+
+/* Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #8B008B;
+}
+
+/* Topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Colour on hover */
+.topnav a:hover {
+  background-color: #e6ded5;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #e6ded5;
+  padding-left: 20px;
+}
+
+/* Images */
+.img {
+  width: 100%;
+  height: 25%;
+}
+
+/* Add a card effect for body */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #e6ded5;
+  color: #333338;
+  margin-top: 20px;
+}
+
+/* Responsive layout for when the screen is less than 800px wide to make the two columns stack on top of each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout for when the screen is less than 400px wide to make the navigation links stack on top of each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+    
+/* Columns */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout for when the screen is less than 600px wide to make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+
+/* Review stars */
+.checked {
+  color: #8B008B;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook icon */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter icon */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Instagram icon */
+.fa-instagram {
+  background: #C13584;
+  color: white;
+}
+
+ /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #8B008B;
+}
+
+/* Style the buttons used to open the tab content */
+.tab button {
+  color: white;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background colour of buttons on hover */
+.tab button:hover {
+  background-color: #e6ded5;
+  color: black;
+}
+
+/* Create an active tablink class */
+.tab button.active {
+  background-color: #e6ded5;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+
+/* Images carousel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots for slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Submit button */
+input[type=submit] {
+  background-color: #8B008B;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* Submit button on hover */
+input[type=submit]:hover {
+  background-color: #e6ded5;
+  color: black;
+}
+
+/* Make total price bold */ 
+#totalPrice {
+  color: #8B008B;
+}
+
+/* Go Back button */
+.button {
+  background-color: #8B008B;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* Go Back button on hover */
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Table */
+td, th {
+  width: 100%;
+  border: 1px solid #999;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Zebra striping for table */
+tr:nth-of-type(odd) { 
+  background: #e6ded5; 
+}
+
+/* Table heading */
+th { 
+  background: #8B008B; 
+  color: white; 
+  font-weight: bold; 
+}
+
+/* Columns */
+.column {
+  padding: 0.5em 1.25em;
+}
+
+/* Error message for contact form */
+.error{
+  color: #8B008B;
+}
+
+/* element and state selectors for the hyperlink */
+a{
+  color: #8B008B;
+}
+a:link {
+  text-decoration: none;
+} 
+a:visited {
+  text-decoration: none;
+} 
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}

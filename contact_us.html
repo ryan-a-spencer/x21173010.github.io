@@ -1,0 +1,167 @@
+<!-- 
+	Student Name:	Ryan Spencer
+	Student ID:		x21173010
+	Course:			HDAIML_JAN22OL
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		
+			<!-- HTML5 charset -->
+			<meta charset="UTF-8">
+			
+			<title>Delightful Cakes | Contact Us</title>
+
+			<!-- Linking the external Javascript to the HTML index page -->
+			<script type="text/javascript" src="js/js_external.js"></script>
+
+			<!-- Linking the external style sheet to the HTML index page -->
+			<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+
+	<body>
+		
+		<div class="header">
+			<h1>Delightful Cakes Ltd</h1>
+		</div>
+
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="about_us.html">About Us</a>
+			<a href="our_cakes.html">Our Cakes</a>
+			<a href="contact_us.html" style="float:right">Contact Us</a>
+		</div>
+		
+		<div class="row">
+			
+			<div class="leftcolumn">
+			
+				<div class="card">
+				
+					<h2>Have a question?</h2>
+					<p><strong>Please fill out the contact form below and we will get back to you as soon as possible!</strong></p>
+					<br><br>
+					
+						<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+         
+							<label>
+							Name: <span class="required"></span>
+							</label>
+							<br>
+							<input type="text" name="name" class="long"/>
+							<br>
+							<span class="error" id="errorname"></span>
+							<br>
+							<br>
+							
+							<label>
+							Phone number: <span class="required"></span>
+							</label>
+							<br>
+							<input type="phone" name="phone" class="long"/>
+							<br>
+							<span class="error" id="errorphone"></span>
+							<br>
+							<br>
+							
+							<label>
+							Email address: <span class="required"></span>
+							</label>
+							<br>
+							<input type="email" name="email" class="long"/>
+							<br>
+							<span class="error" id="erroremail"></span>
+							<br>
+							<br>
+							
+							<label>
+							Message: <span class="required"></span>
+							</label>
+							<br>
+							<textarea name="message" class="long field-textarea" size="100"></textarea>
+							<br>
+							<span class="error" id="errormsg"></span>
+							<br>
+							<br>
+							
+							<input type="submit" value="Submit">
+						
+						</form>
+			
+				</div>
+				
+			</div>
+			
+			<div class="rightcolumn">
+				
+				<div class="card">
+					
+					<center>
+						
+						<h2>Address</h2>
+						<p>Delightful Cakes Limited <br>
+						Unit 1 <br>
+						Ballybrit Industrial Estate <br>
+						Galway <br>
+						H91 A7M8<br>
+						<br><br>
+						<strong>Call us!</strong><br>
+						091 765 899<br><br>
+						<strong>Email us!</strong><br>
+						hello@delightfulcakes.ie</p>
+						
+					</center>
+					
+				</div>
+				
+				<div class="card">
+					
+					<center>
+						
+						<h2>Opening Hours</h2>
+						<p><strong>Monday to Friday:</strong> 9am to 5pm<br>
+						<strong>Saturday:</strong> 9am to 2pm<br>
+						<strong>Sunday:</strong> Closed</p>
+						
+					</center>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		</div>
+			
+
+		<div class="footer">
+				
+			<br>
+				  
+				<center>
+					
+						<!-- Add icon library -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+						<!-- Add font awesome icons -->
+						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/" class="fa fa-twitter"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+						
+						<h5>&copy; Delightful Cakes Limited 2022</h5>
+							
+				</center>
+				
+				<br>
+				<button class="button" onclick="history.back()">Go Back</button>
+		
+		</div>
+
+	</body>
+
+</html>
+

@@ -1,0 +1,156 @@
+<!-- 
+	Student Name:	Ryan Spencer
+	Student ID:		x21173010
+	Course:			HDAIML_JAN22OL
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		
+			<!-- HTML5 charset -->
+			<meta charset="UTF-8">
+			
+			<title>Delightful Cakes | About Us</title>
+
+			<!-- Linking the external Javascript to the HTML index page -->
+			<script type="text/javascript" src="js/js_external.js"></script>
+
+			<!-- Linking the external style sheet to the HTML index page -->
+			<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+
+	<body>
+		
+		<div class="header">
+			<h1>Delightful Cakes Ltd</h1>
+		</div>
+
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="about_us.html">About Us</a>
+			<a href="our_cakes.html">Our Cakes</a>
+			<a href="contact_us.html" style="float:right">Contact Us</a>
+		</div>
+				
+			<div class="card">
+				
+					<h2>Making Sweet Things Happen!</h2>
+					
+					 <!-- Tab links -->
+					<div class="tab">
+						<button class="tablinks" onclick="openInfo(event, 'History')" id="defaultOpen">Our History</button>
+						<button class="tablinks" onclick="openInfo(event, 'Custom')">Custom Cakes</button>
+						<button class="tablinks" onclick="openInfo(event, 'Corporate')">Corporate Orders</button>
+					</div>
+
+					<div id="History" class="tabcontent">
+						<h3>Our History</h3>
+						<p>Delightful Cakes began as a small family bakery in Galway over 30 years ago. Since then, we have been baking and 
+						delivering cakes nationwide. Our beautiful, fully customized, bespoke amazing cakes, have been the focal point of 
+						hundreds of special occasions all over Ireland. We are experts in occasion cakes and confectionary providing 
+						everything from bespoke wedding cakes to creative confectionary with corporate logos.
+						<br><br>
+						Delightful Cakes is founded on the simple principle of Making Sweet Things Happen! It has always been our aim 
+						to provide quality, value for money and truly special products for our customers.  We believe that the consistent 
+						achievement of these goals along with total quality of service is what makes us the natural choice for your special 
+						occasion or event. We hope you agree!</p>
+						<br>
+						<img class="img" src="images/cake2.jpg" alt="Birthday Cake"/>
+					</div>
+
+					<div id="Custom" class="tabcontent">
+						<h3>Custom Cakes</h3>
+						<p>We are experts in occasion cakes and pride ourselves on our ability to take a customers idea and turn it into something 
+						that looks great and tastes delicious. Click below to see some of our creations!</p> 
+						
+						<!-- Slideshow container -->
+						<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides fade">
+							<img src="images/cake3.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/cake4.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/cake5.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="images/cake6.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/cake7.jpg" style="width:100%">
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+
+						<!-- The dots -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span>
+						</div> 
+					
+					</div>
+
+					<div id="Corporate" class="tabcontent">
+						<h3>Corporate Orders</h3>
+						<p>We have worked with companies all over Ireland for all types of corporate catering and corporate gift orders. Our corporate 
+						clients just love the results from gifting with cake. It is easy and clientele have never received a tastier 
+						gift! We will include your business card or handwritten note with all deliveries also.</p>
+					
+						<br>
+						<img class="img" src="images/cake9.jpg" alt="Cake"/>
+					</div>
+			
+			</div>
+			
+			<script>
+				
+				document.getElementById("defaultOpen").click();
+			
+			</script>
+			
+
+			<div class="footer">
+				
+				<br>
+				  
+					<center>
+					
+							<!-- Add icon library -->
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+							<!-- Add font awesome icons -->
+							<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/" class="fa fa-twitter"></a>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+						
+							<h5>&copy; Delightful Cakes Limited 2022</h5>
+							
+					</center>
+				
+					<br>
+					<button class="button" onclick="history.back()">Go Back</button>
+		
+			</div>
+
+	</body>
+
+</html>
+
